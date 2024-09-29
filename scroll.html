@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Scrolling</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: black;
+}@keyframes list {
+  0%{
+    transform: translateX(0%);
+  }
+  25%{
+    transform: translateX(calc(-300px *12.1));
+  }
+  50%{
+    transform: translateX(calc(-300px * 12.1));
+  }
+  75%{
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+  .container{
+          
+        animation-fill-mode: both;
+         padding: 60px 0;
+         overflow: hidden;
+         background-color:salmon;
+         align-items: center;
+         justify-content: center;
+         white-space:nowrap;
+    
+  }
+  .tag{
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    
+  }
+
+  .list{
+  
+    flex-grow: 20px;
+    padding: 10px;
+    object-fit: cover;
+    animation: list 20s  infinite ease-in-out;
+    width: calc(300px * 15);
+    padding-top: 20px;
+    
+     
+  }
+
+  
+.list img{
+ border: solid rgb(20, 20, 20) 3px;
+ margin: 1px 10px;
+ width: 300px;
+ height: 400px;
+ object-fit: cover;
+border-radius: 25px;
+animation-duration: 5s;
+}
+
+.container:hover .list{
+  animation-play-state: paused;
+}
+</style>
+
+<body>
+    <div class="container">
+       <div class="tag"> <h1>Continuously Image Scrolling </h1></div>
+       <div class="list">
+            <img  src="./icon/panda.jpeg" alt="Image-1">
+            <img  src="./icon/11.jpeg" alt="Image-2">
+            <img  src="./icon/15.jpg" alt="Image-3">
+            <img  src="./icon/2.jpg" alt="Image-4">
+            <img   src="./icon/3.png" alt="Image-5">
+            <img   src="./icon/4.jpg" alt="Image-6">
+            <img   src="./icon/5.jpg" alt="Image-7">
+            <img  src="./icon/6.jpg" alt="Image-8">
+            <img   src="./icon/7.jpg" alt="Image-9">
+            <img  src="./icon/8.jpg" alt="Image-10">
+            <img  src="./icon/9.jpg" alt="Image-11">
+            <img  src="./icon/10.jpg" alt="Image-12">
+            <img  src="./icon/12.jpg" alt="Image-13">
+            <img  src="./icon/13.jpg" alt="Image-14">
+            <img src="./icon/14.jpg" alt="Image-15">
+        </div>
+    </div>
+</body>
+</html>

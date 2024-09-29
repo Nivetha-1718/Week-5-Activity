@@ -1,0 +1,26 @@
+
+
+<script>
+    const startGame =() => {
+    let randomnumber = Math.floor(Math.random()*10)+1;
+    let attempts = 0;
+    let guess = null;
+    while(guess !== randomnumber){
+       guess = parseInt(prompt("Guess a number between 1 and 10:"));
+        attempts++;
+        if(guess < randomnumber){
+             alert("Too low! Try again");
+        }
+        else if(guess>randomnumber){
+            alert("Too high! Try again");
+        }
+        else if(guess === randomnumber){
+            alert(`Conguratulations! you guessed the number ${randomnumber} in ${attempts} attempts.`);
+        }
+    }}
+    startGame()
+    </script>
+    
+    
+    
+    
