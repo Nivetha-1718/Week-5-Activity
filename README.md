@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-Check out the live version of the eCommerce website []
+Check out the live version of the eCommerce website [https://nivetha-1718.github.io/Week-5-Activity/]
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or additional features, feel free to open an issue or submit a pull request.
